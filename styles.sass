@@ -1,0 +1,165 @@
+*, ::after, ::before
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	list-style: none
+
+html
+	font-size: 62.5%
+
+.container
+	margin: 0 auto
+	padding: 7rem 10rem 0
+
+//header
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+.nav-list
+	display: flex
+	column-gap: 4rem
+	&__item
+		font-weight: 400
+		font-size: 1.6rem
+		text-align: center
+		font-family: 'Montserrat'
+span
+	font-weight: 700
+//main
+.main
+	padding-top: 7rem
+	display: flex
+	justify-content: space-around
+	&__img
+		transform-style: preserve-3d
+
+
+		&-svg
+			position: absolute
+			z-index: -50
+			top: 20rem
+			transform: rotate(244deg) rotateX(325deg) rotateZ(-65deg)
+			animation: beat 7s infinite forwards linear
+			width: 100%
+		&-woman
+			width: 100%
+
+@keyframes beat 
+	0% 
+		stroke-dashoffset: 0
+		stroke-dasharray: 4 2 2 4
+		stroke: #213f48
+		stroke-width: 8
+	
+	35%
+		stroke-width: 1
+		stroke-dasharray: 1 5 4 2
+	
+	50% 
+		stroke: #f5dd3e
+		stroke-dashoffset: 120
+		stroke-dasharray: 2 4 1 5
+	
+	100% 
+		stroke-width: 8
+		stroke-dashoffset: 240
+		stroke-dasharray: 4 2 2 4
+		stroke: #213f48
+
+		
+	
+.servise
+	padding-right: 10rem
+	padding-top: 7rem
+	&__title
+		color: rgb(52, 52, 52)
+		font-size: 4rem
+		font-weight: 700
+		line-height: 5rem
+		text-align: left
+		width: 38rem
+		margin-bottom: 1rem
+		font-family: "Xolonium"
+		position: relative
+		&::after
+			content: url("/img/arrow-small.png")
+			position: absolute
+			top: -5rem
+			right: 5rem
+		&:before
+			content: url("/img/arrow-big.png")
+			position: absolute
+			top: -9rem
+			right: 0rem
+	&__p
+		color: rgb(0, 0, 0)
+		font-size: 1.6rem
+		font-weight: 400
+		line-height: 2rem
+		letter-spacing: 0%
+		text-align: left
+		margin-bottom: 1rem
+		font-family: "Montserrat"
+	&__list
+		margin-bottom: 2rem
+	&__list-item
+		list-style: inside
+		margin-bottom: 0
+	&__second
+		color: rgb(52, 52, 52)
+		font-size: 5rem
+		font-weight: 700
+		line-height: 5rem
+		text-align: left
+		font-family: "Xolonium"
+	&__bt
+		border-radius: 5.85px
+		box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25)
+		background: rgb(21, 90, 105)
+		color: rgb(255, 255, 255)
+		font-size: 2.7rem
+		font-weight: 700
+		line-height: 3rem
+		text-align: left
+		padding: 0.6rem 1.5rem
+		width: 27rem
+		position: relative
+		font-family: "Xolonium"
+		&::after 
+			content: ""
+			display: block
+			width: 1.1rem
+			height: 1.1rem
+			background: #155A69
+			transform: rotate(45deg)
+			position: absolute
+			right: -2.5rem
+			bottom: 40%
+		&::before
+			content: ""
+			display: block
+			width: 1.1rem
+			height: 1.1rem
+			background: #69176A
+			transform: rotate(45deg)
+			position: absolute
+			right: -5.5rem
+			bottom: 40%
+
+.wrap::before
+			content: ""
+			display: block
+			width: 1.1rem
+			height: 1.1rem
+			background: #114473
+			transform: rotate(45deg)
+			position: absolute
+			right: 29.5rem
+			bottom: 77px
+
+
+
+	
+
+
